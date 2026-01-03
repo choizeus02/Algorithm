@@ -1,5 +1,5 @@
-select USER_ID, PRODUCT_ID
-from ONLINE_SALE
-GROUP BY USER_ID, PRODUCT_ID
-HAVING COUNT(*) > 1
-ORDER BY 1, 2 DESC
+SELECT user_id, product_id 
+FROM ONLINE_SALE
+GROUP BY user_id, product_id
+HAVING count(*) > 1    
+ORDER BY user_id ASC, product_id DESC 
