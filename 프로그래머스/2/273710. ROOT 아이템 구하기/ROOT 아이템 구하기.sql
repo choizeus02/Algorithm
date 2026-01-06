@@ -1,0 +1,5 @@
+select I.ITEM_ID, I.ITEM_NAME
+from ITEM_TREE IT
+join ITEM_INFO I on IT.ITEM_ID = I.ITEM_ID
+where PARENT_ITEM_ID IS NULL
+order by I.ITEM_ID
